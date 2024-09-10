@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VOt-rE-DhL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="NjN-zT-L1o">
+            <objects>
+                <navigationController id="nCb-ub-Yv8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="Mhc-JX-EsG"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ecK-j8-Yog">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pjd-LU-7n1" kind="relationship" relationship="rootViewController" id="dVT-NB-wok"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhd-Y6-6cN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1670" y="426"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="dTW-ht-65L">
+            <objects>
+                <viewController id="pjd-LU-7n1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chw-mW-T09">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3l-0e-06V">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1629"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meg-pv-oyH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hHG-75-t6X">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1700"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBlackVer" translatesAutoresizingMaskIntoConstraints="NO" id="NMl-2j-c56">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="mir-rD-0LX"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news1" translatesAutoresizingMaskIntoConstraints="NO" id="FuS-UM-oH9">
+                                                        <rect key="frame" x="0.0" y="100" width="414" height="400"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="400" id="rca-xm-b8K"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news2" translatesAutoresizingMaskIntoConstraints="NO" id="wwL-w0-b7o">
+                                                        <rect key="frame" x="0.0" y="500" width="414" height="400"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="400" id="aO9-u0-MLu"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news3" translatesAutoresizingMaskIntoConstraints="NO" id="R3a-BC-FCj">
+                                                        <rect key="frame" x="0.0" y="900" width="414" height="400"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="400" id="3SH-Zs-FKx"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news4" translatesAutoresizingMaskIntoConstraints="NO" id="PGJ-9Y-dte">
+                                                        <rect key="frame" x="0.0" y="1300" width="414" height="400"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="400" id="Sf4-dg-Nrm"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="414" id="DAp-6x-Xzq"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80l-ar-IxF">
+                                                <rect key="frame" x="34" y="1700" width="346" height="92"/>
+                                                <string key="text">Рабочий номер 8 (7172) 74 23 52, WhatsApp – сообщения 8 708 664 10 40, 
+Telegram – сообщения 8 708 664 10 40.</string>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1019607843" green="0.21176470589999999" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="80l-ar-IxF" firstAttribute="leading" secondItem="meg-pv-oyH" secondAttribute="leading" constant="34" id="Gyi-7o-50B"/>
+                                            <constraint firstItem="80l-ar-IxF" firstAttribute="top" secondItem="hHG-75-t6X" secondAttribute="bottom" id="Ilf-Dp-PrD"/>
+                                            <constraint firstAttribute="height" constant="1800" id="KL0-NW-JqH"/>
+                                            <constraint firstItem="hHG-75-t6X" firstAttribute="centerX" secondItem="meg-pv-oyH" secondAttribute="centerX" id="PhA-rv-agV"/>
+                                            <constraint firstItem="hHG-75-t6X" firstAttribute="top" secondItem="meg-pv-oyH" secondAttribute="top" id="UWo-YT-csN"/>
+                                            <constraint firstAttribute="trailing" secondItem="80l-ar-IxF" secondAttribute="trailing" constant="34" id="bus-Y5-etM"/>
+                                            <constraint firstAttribute="bottom" secondItem="80l-ar-IxF" secondAttribute="bottom" constant="8" id="jvG-ZA-5A1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="meg-pv-oyH" firstAttribute="leading" secondItem="y3l-0e-06V" secondAttribute="leading" id="Awd-F4-bxb"/>
+                                    <constraint firstAttribute="bottom" secondItem="meg-pv-oyH" secondAttribute="bottom" id="XAk-hU-1yT"/>
+                                    <constraint firstAttribute="trailing" secondItem="meg-pv-oyH" secondAttribute="trailing" id="lj0-db-pYW"/>
+                                    <constraint firstItem="meg-pv-oyH" firstAttribute="top" secondItem="y3l-0e-06V" secondAttribute="top" id="ozQ-GM-8Vd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NuO-yd-w8J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="meg-pv-oyH" firstAttribute="width" secondItem="chw-mW-T09" secondAttribute="width" id="37X-mA-PtV"/>
+                            <constraint firstItem="y3l-0e-06V" firstAttribute="top" secondItem="NuO-yd-w8J" secondAttribute="top" id="5qC-L7-a7v"/>
+                            <constraint firstItem="NuO-yd-w8J" firstAttribute="bottom" secondItem="y3l-0e-06V" secondAttribute="bottom" id="f1d-O5-q57"/>
+                            <constraint firstItem="y3l-0e-06V" firstAttribute="leading" secondItem="chw-mW-T09" secondAttribute="leading" id="jXB-ww-Hik"/>
+                            <constraint firstItem="NuO-yd-w8J" firstAttribute="trailing" secondItem="y3l-0e-06V" secondAttribute="trailing" id="nTt-88-xHh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="y2y-kr-Aeb"/>
+                    <size key="freeformSize" width="414" height="1800"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eI0-Wt-Cga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1671" y="1470"/>
+        </scene>
+        <!--Fac View Controller-->
+        <scene sceneID="jDJ-hk-ee8">
+            <objects>
+                <viewController id="85k-O4-Tal" customClass="FacViewController" customModule="AITU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HXv-DR-zGI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="olr-wS-OtN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="VmZ-l6-Oxs">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="177.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Computer Science" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" image="aituback"/>
+                                            <fontDescription key="titleFontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapButton1" destination="85k-O4-Tal" eventType="touchUpInside" id="xnR-ZF-qX2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFc-79-03g">
+                                        <rect key="frame" x="0.0" y="179.5" width="414" height="177.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="IT Management" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" image="aituback"/>
+                                            <fontDescription key="titleFontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapButton2" destination="85k-O4-Tal" eventType="touchUpInside" id="4Jh-dM-DGm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA6-pR-8Sn">
+                                        <rect key="frame" x="0.0" y="359" width="414" height="178"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Cyber Security" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" image="aituback"/>
+                                            <fontDescription key="titleFontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapButton" destination="85k-O4-Tal" eventType="touchUpInside" id="GJ6-B2-8fU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6S-5i-cQT">
+                                        <rect key="frame" x="0.0" y="539" width="414" height="177.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Digital Journalism" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" image="aituback"/>
+                                            <fontDescription key="titleFontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapButton3" destination="85k-O4-Tal" eventType="touchUpInside" id="WpJ-gY-ogN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWl-JE-85w">
+                                        <rect key="frame" x="0.0" y="718.5" width="414" height="177.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Industrial Automation" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" image="aituback"/>
+                                            <fontDescription key="titleFontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapButton4" destination="85k-O4-Tal" eventType="touchUpInside" id="UaK-7t-81L"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8u7-ji-9jy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="olr-wS-OtN" firstAttribute="top" secondItem="HXv-DR-zGI" secondAttribute="top" id="6hd-bQ-Y87"/>
+                            <constraint firstAttribute="trailing" secondItem="olr-wS-OtN" secondAttribute="trailing" id="BM0-wA-T3h"/>
+                            <constraint firstItem="olr-wS-OtN" firstAttribute="leading" secondItem="HXv-DR-zGI" secondAttribute="leading" id="jga-ga-VgU"/>
+                            <constraint firstItem="olr-wS-OtN" firstAttribute="bottom" secondItem="HXv-DR-zGI" secondAttribute="bottom" id="rTl-d3-46A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QCL-7C-AnX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzD-m9-Jiy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913" y="1168"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ha4-RY-x8g">
+            <objects>
+                <viewController storyboardIdentifier="it" id="UoK-rt-HF3" customClass="ITViewController" customModule="AITU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xOR-TJ-msc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GO7-Pp-UXc">
+                                <rect key="frame" x="0.0" y="69" width="414" height="662.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Science (Компьютерные науки)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rh-pc-CVb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="26"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fac" translatesAutoresizingMaskIntoConstraints="NO" id="ja1-xP-I1B">
+                                        <rect key="frame" x="0.0" y="36" width="414" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="rVi-i3-PMq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6B06101" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hak-wE-Lz1">
+                                        <rect key="frame" x="0.0" y="296" width="414" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="Yq8-Cd-4R3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-7c-iMK">
+                                        <rect key="frame" x="0.0" y="329.5" width="414" height="303"/>
+                                        <string key="text">Образовательная программа «Computer Science» (Компьютерные науки) позволит получить специализированные компетенции в области информационных технологий, которые включают понимание программно-информационных систем, развитие навыков работы с вычислительными системами и программным обеспечением. Выпускники направления будут востребованными специалистами и выгодно отличаться в конкурентной среде, и смогут профессионально управлять полученными компетенциями.</string>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профильные предметы: физика+математика" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1a-Xc-r16">
+                                        <rect key="frame" x="0.0" y="642.5" width="414" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="vdH-z6-Zth"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                        <color key="textColor" red="0.41149452580000001" green="0.72673480749999997" blue="0.94023997579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6rh-pc-CVb" firstAttribute="leading" secondItem="GO7-Pp-UXc" secondAttribute="leading" id="fts-BK-5pv"/>
+                                    <constraint firstAttribute="width" constant="414" id="sjR-1T-azd"/>
+                                    <constraint firstAttribute="trailing" secondItem="6rh-pc-CVb" secondAttribute="trailing" id="tbe-q1-GBW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I5z-Xn-UNC"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GO7-Pp-UXc" firstAttribute="top" secondItem="I5z-Xn-UNC" secondAttribute="top" constant="25" id="D3T-BQ-3Gc"/>
+                            <constraint firstAttribute="trailing" secondItem="GO7-Pp-UXc" secondAttribute="trailing" id="jva-d8-u89"/>
+                            <constraint firstItem="GO7-Pp-UXc" firstAttribute="leading" secondItem="I5z-Xn-UNC" secondAttribute="leading" id="pCU-g1-N9L"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="US7-qY-4ko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2539" y="1169"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="LqY-Ri-YJV">
+            <objects>
+                <viewController id="FX5-Ww-MeC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gV-I1-ncK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1573"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElJ-C5-7mQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1573"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-pn-xnT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3r0-i1-Y2C">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="LG1-0s-VUd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="106.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Видение университета" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANf-Q7-icV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astana IT University – ведущий центр компетенций по цифровой трансформации в Центральной Азии." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O7-5k-rfP">
+                                                                <rect key="frame" x="0.0" y="36.5" width="414" height="70"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="yKd-rG-dJP">
+                                                        <rect key="frame" x="0.0" y="132.5" width="414" height="106.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Глобальная цель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mre-kC-ad4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подготовка высококвалифицированных специалистов в области цифровой экономики на основе междисциплинарных технологий." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlq-YT-hXn">
+                                                                <rect key="frame" x="0.0" y="36.5" width="414" height="70"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ZAR-9p-Xss">
+                                                        <rect key="frame" x="0.0" y="265" width="414" height="223"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Учредители Astana IT University" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPx-JZ-fac">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNF-bv-6B5">
+                                                                <rect key="frame" x="0.0" y="36.5" width="414" height="186.5"/>
+                                                                <string key="text">Фонд образования Нурсултана Назарбаева — первая общественная организация в образовательном пространстве Казахстана и стран СНГ, успешно интегрировавшая свои инновационные школы и университеты в международное сообщество, и сегодня они активно транслируют накопленный опыт в систему образования Республики Казахстан.</string>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="L0d-FV-kbC">
+                                                        <rect key="frame" x="0.0" y="514" width="414" height="106.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ученый совет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ap-Zg-Y62">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gea-eO-gHb">
+                                                                <rect key="frame" x="0.0" y="36.5" width="414" height="70"/>
+                                                                <string key="text">Ученый совет Университета является одной из форм коллегиального управления высшим учебным заведением. Ученый совет Университета создается приказом ректора Университета.</string>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Bk5-B0-LBR">
+                                                        <rect key="frame" x="0.0" y="646.5" width="414" height="106.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Академический совет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtG-Kx-HDi">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astana IT University – ведущий центр компетенций по цифровой трансформации в Центральной Азии." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtm-Re-aTG">
+                                                                <rect key="frame" x="0.0" y="36.5" width="414" height="70"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="6tV-nt-9SQ">
+                                                        <rect key="frame" x="0.0" y="779" width="414" height="153"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Научно-технический совет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOE-WW-JUM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5R-I1-sV8">
+                                                                <rect key="frame" x="0.0" y="36.5" width="414" height="116.5"/>
+                                                                <string key="text">Научно-технический совет является высшим экспертно-совещательным органом университета в сфере формирования  научной, научно-технической и инновационной деятельности.</string>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ifW-vD-Mod">
+                                                        <rect key="frame" x="0.0" y="958" width="414" height="176.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Аккредитация - Институциональная" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv4-tE-78D">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQx-gf-i0W">
+                                                                <rect key="frame" x="0.0" y="36.5" width="414" height="140"/>
+                                                                <string key="text">Институциональная аккредитация – процесс оценивания качества организации образования аккредитационным органом на соответствие заявленному статусу и установленным стандартам аккредитационного органа.</string>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aAe-2s-5rO">
+                                                        <rect key="frame" x="0.0" y="1160.5" width="414" height="160.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Аккредитация - Специализированная" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-6m-wjY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Специализированная аккредитация — оценка качества отдельных образовательных программ, реализуемых организацией образования." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7B-iV-dZC">
+                                                                <rect key="frame" x="0.0" y="67" width="414" height="93.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="6cI-x8-nem">
+                                                        <rect key="frame" x="0.0" y="1347" width="414" height="153"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Аккредитация - Национальная" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXb-xS-cPx">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="26"/>
+                                                                <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwd-zL-4kS">
+                                                                <rect key="frame" x="0.0" y="36.5" width="414" height="116.5"/>
+                                                                <string key="text">Национальная аккредитация — аккредитация организации образования или образовательной программы аккредитационным агентством в рамках страны.</string>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1500" id="IFi-Rv-jO8"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="3r0-i1-Y2C" firstAttribute="leading" secondItem="1pE-pn-xnT" secondAttribute="leading" id="5FT-uV-UlD"/>
+                                            <constraint firstAttribute="height" constant="1500" id="60e-Nv-YAP"/>
+                                            <constraint firstAttribute="bottom" secondItem="3r0-i1-Y2C" secondAttribute="bottom" id="CGQ-kK-lpk"/>
+                                            <constraint firstAttribute="bottom" secondItem="3r0-i1-Y2C" secondAttribute="bottom" id="LQY-sd-Wnm"/>
+                                            <constraint firstItem="3r0-i1-Y2C" firstAttribute="leading" secondItem="1pE-pn-xnT" secondAttribute="leading" id="W7Z-h6-kfY"/>
+                                            <constraint firstAttribute="trailing" secondItem="3r0-i1-Y2C" secondAttribute="trailing" id="YTh-rH-eGQ"/>
+                                            <constraint firstItem="3r0-i1-Y2C" firstAttribute="top" secondItem="1pE-pn-xnT" secondAttribute="top" id="YgE-86-dvC"/>
+                                            <constraint firstItem="3r0-i1-Y2C" firstAttribute="top" secondItem="1pE-pn-xnT" secondAttribute="top" id="a5Q-GQ-vgV"/>
+                                            <constraint firstAttribute="trailing" secondItem="3r0-i1-Y2C" secondAttribute="trailing" id="ey9-85-OZB"/>
+                                            <constraint firstItem="3r0-i1-Y2C" firstAttribute="leading" secondItem="1pE-pn-xnT" secondAttribute="leading" id="hUh-Jo-Z4u"/>
+                                            <constraint firstAttribute="trailing" secondItem="3r0-i1-Y2C" secondAttribute="trailing" id="iKA-sZ-v0M"/>
+                                            <constraint firstAttribute="bottom" secondItem="3r0-i1-Y2C" secondAttribute="bottom" id="l1h-OC-G38"/>
+                                            <constraint firstItem="3r0-i1-Y2C" firstAttribute="top" secondItem="1pE-pn-xnT" secondAttribute="top" id="q2H-t1-cKQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1pE-pn-xnT" firstAttribute="leading" secondItem="ElJ-C5-7mQ" secondAttribute="leading" id="84w-Z6-vap"/>
+                                    <constraint firstAttribute="bottom" secondItem="1pE-pn-xnT" secondAttribute="bottom" id="Cnb-fN-IZs"/>
+                                    <constraint firstAttribute="trailing" secondItem="1pE-pn-xnT" secondAttribute="trailing" id="aDU-M1-lgD"/>
+                                    <constraint firstItem="1pE-pn-xnT" firstAttribute="top" secondItem="ElJ-C5-7mQ" secondAttribute="top" id="y9R-6Y-dpe"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JEG-ca-ION"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ElJ-C5-7mQ" firstAttribute="leading" secondItem="JEG-ca-ION" secondAttribute="leading" id="Eyz-wp-Kpt"/>
+                            <constraint firstItem="ElJ-C5-7mQ" firstAttribute="trailing" secondItem="JEG-ca-ION" secondAttribute="trailing" id="WcT-ei-2nS"/>
+                            <constraint firstAttribute="bottom" secondItem="ElJ-C5-7mQ" secondAttribute="bottom" id="ahJ-WU-YV0"/>
+                            <constraint firstItem="ElJ-C5-7mQ" firstAttribute="top" secondItem="5gV-I1-ncK" secondAttribute="top" id="kat-2P-ySH"/>
+                            <constraint firstItem="1pE-pn-xnT" firstAttribute="width" secondItem="5gV-I1-ncK" secondAttribute="width" id="kvR-E4-FYF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="M42-No-vq6"/>
+                    <size key="freeformSize" width="414" height="1573"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2h-JA-y84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159.42028985507247" y="1394.53125"/>
+        </scene>
+        <!--AboutUs-->
+        <scene sceneID="lne-HT-DyZ">
+            <objects>
+                <navigationController id="oLf-G9-o6H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="AboutUs" image="info.circle.fill" catalog="system" selectedImage="info.circle.fill" id="Hui-0O-ik0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zNE-ZX-twB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FX5-Ww-MeC" kind="relationship" relationship="rootViewController" id="Cz5-Hj-r7K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tH2-QJ-AOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="426"/>
+        </scene>
+        <!--Edu-->
+        <scene sceneID="9yv-GI-heq">
+            <objects>
+                <navigationController id="bxh-ae-7f7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Edu" image="graduationcap.fill" catalog="system" selectedImage="graduationcap.fill" id="hj6-LD-OKz">
+                        <color key="badgeColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7SB-dd-ClC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="85k-O4-Tal" kind="relationship" relationship="rootViewController" id="mq5-ap-ORn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwm-tb-qS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913" y="426"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HPv-sk-lzw">
+            <objects>
+                <tabBarController id="VOt-rE-DhL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YfV-AP-cwi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nCb-ub-Yv8" kind="relationship" relationship="viewControllers" id="YEO-xA-fCY"/>
+                        <segue destination="bxh-ae-7f7" kind="relationship" relationship="viewControllers" id="PlR-7N-iym"/>
+                        <segue destination="oLf-G9-o6H" kind="relationship" relationship="viewControllers" id="90r-JH-UAo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jp5-jz-blO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913" y="-401"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yvq-xQ-hQ3">
+            <objects>
+                <viewController storyboardIdentifier="itm" id="UL6-HE-3g0" customClass="ITMViewController" customModule="AITU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FIW-x5-7H3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q1p-yK-nsL">
+                                <rect key="frame" x="0.0" y="69" width="414" height="616"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT Management (IT менеджмент)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfV-6m-fx4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="26"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itm" translatesAutoresizingMaskIntoConstraints="NO" id="AtD-kz-9bK">
+                                        <rect key="frame" x="0.0" y="36" width="414" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="oJM-bf-Qee"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6B04101" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZn-eB-Hwp">
+                                        <rect key="frame" x="0.0" y="296" width="414" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="bwk-fj-Ar8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBs-Ta-tb9">
+                                        <rect key="frame" x="0.0" y="329.5" width="412.5" height="256.5"/>
+                                        <string key="text">Данная образовательная программа позволит сформировать навыки управления в области информационных технологий, информационных систем. Выпускники, завершившие обучение по данной программе, станут трансформаторами и лидерами бизнеса, способными организовывать и развивать информационный ландшафт современных организаций
+
+</string>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профильные предметы: география + математика" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s51-6p-O7F">
+                                        <rect key="frame" x="0.0" y="596" width="414" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="aeE-Nr-ZJF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                        <color key="textColor" red="0.41149452580000001" green="0.72673480749999997" blue="0.94023997579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pfV-6m-fx4" secondAttribute="trailing" id="J2t-2j-tiD"/>
+                                    <constraint firstAttribute="width" constant="414" id="kM6-ex-eeA"/>
+                                    <constraint firstItem="pfV-6m-fx4" firstAttribute="leading" secondItem="q1p-yK-nsL" secondAttribute="leading" id="tra-tx-3Q3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vqI-ka-hBT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q1p-yK-nsL" firstAttribute="leading" secondItem="vqI-ka-hBT" secondAttribute="leading" id="DB1-De-Ebc"/>
+                            <constraint firstItem="q1p-yK-nsL" firstAttribute="top" secondItem="vqI-ka-hBT" secondAttribute="top" constant="25" id="Psz-zR-etz"/>
+                            <constraint firstAttribute="trailing" secondItem="q1p-yK-nsL" secondAttribute="trailing" id="fg1-io-DEn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1c-bd-LpP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3258" y="1169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jfz-zh-u97">
+            <objects>
+                <viewController storyboardIdentifier="cybers" id="DGz-IF-K9S" customClass="CSViewController" customModule="AITU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YCs-OA-PMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="69z-Qg-n5a">
+                                <rect key="frame" x="0.0" y="69" width="414" height="685.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cybersecurity (Кибербезопасность)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTG-5I-5Qt">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="26"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cs" translatesAutoresizingMaskIntoConstraints="NO" id="PVj-nZ-5Iq">
+                                        <rect key="frame" x="0.0" y="36" width="414" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="UwO-Pt-Fv9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6B06301" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfh-Ov-Wiw">
+                                        <rect key="frame" x="0.0" y="296" width="414" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="kDz-FI-1SS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T96-2Y-Mck">
+                                        <rect key="frame" x="0.0" y="329.5" width="414" height="326"/>
+                                        <string key="text">Cyber security — включает в себя работу по информационной безопасности, по независимой и объективной оценке текущего уровня защищенности компьютерных систем и сетей, по идентифицированию имеющихся проблем безопасности, по проектированию и разработке систем обеспечения информационной безопасности организаций и предприятий. Программа позволит развить навыки   в разработке программного обеспечения, а также в технологиях защиты информации и объектов информатизации, обеспечения целостности информации и анализа защищенности систем</string>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профильные предметы: физика + математика" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiP-SF-Ut4">
+                                        <rect key="frame" x="0.0" y="665.5" width="414" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="cyH-VK-aHx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                        <color key="textColor" red="0.41149452580000001" green="0.72673480749999997" blue="0.94023997579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="5iM-zJ-02a"/>
+                                    <constraint firstAttribute="trailing" secondItem="bTG-5I-5Qt" secondAttribute="trailing" id="EOj-7G-cNh"/>
+                                    <constraint firstItem="bTG-5I-5Qt" firstAttribute="leading" secondItem="69z-Qg-n5a" secondAttribute="leading" id="n3N-G8-ita"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nV0-6A-Ski"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="69z-Qg-n5a" firstAttribute="top" secondItem="nV0-6A-Ski" secondAttribute="top" constant="25" id="bSH-6F-Noh"/>
+                            <constraint firstItem="69z-Qg-n5a" firstAttribute="leading" secondItem="nV0-6A-Ski" secondAttribute="leading" id="dUb-qt-8us"/>
+                            <constraint firstAttribute="trailing" secondItem="69z-Qg-n5a" secondAttribute="trailing" id="leH-13-Juf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewJ-Co-WKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3971" y="1169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Pr-f3-5Jq">
+            <objects>
+                <viewController storyboardIdentifier="dj" id="gET-Jw-1iR" customClass="DJViewController" customModule="AITU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2yv-if-J6S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="L6a-AU-kdA">
+                                <rect key="frame" x="0.0" y="69" width="414" height="612.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital Journalism (Цифровая журналистика)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDI-Ka-QrZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="26"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dj" translatesAutoresizingMaskIntoConstraints="NO" id="xp8-Xb-bKJ">
+                                        <rect key="frame" x="0.0" y="36" width="414" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="SR5-ip-9lV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6B03201" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIF-bc-bIF">
+                                        <rect key="frame" x="0.0" y="296" width="414" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="k5y-Ai-Nhe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzD-cQ-axE">
+                                        <rect key="frame" x="0.0" y="329.5" width="414" height="233"/>
+                                        <string key="text">Digital Journalism — Профессия будущего , где основным источником корреспонденции является Интернет, который имеет два основных свойства: интеллект и тщательно передаваемая информация. Это устройство расширило телекоммуникацию, создав новые структуры и методы передачи данных с помощью интерактивного медиаконтента, в том числе формы, которые включают в себя видео, дизайн и коммуникацию. </string>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профильные предметы: творческий экзамен 1 + творческий экзамен 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKP-jO-Aee">
+                                        <rect key="frame" x="0.0" y="572.5" width="414" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="BrI-AJ-MqR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                        <color key="textColor" red="0.41149452580000001" green="0.72673480749999997" blue="0.94023997579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="PDI-Ka-QrZ" secondAttribute="trailing" id="Izf-G9-yTM"/>
+                                    <constraint firstItem="PDI-Ka-QrZ" firstAttribute="leading" secondItem="L6a-AU-kdA" secondAttribute="leading" id="RXy-nS-6ve"/>
+                                    <constraint firstAttribute="width" constant="414" id="UhI-I5-mmu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vSJ-bx-k8s"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="L6a-AU-kdA" secondAttribute="trailing" id="bnY-7c-iI2"/>
+                            <constraint firstItem="L6a-AU-kdA" firstAttribute="top" secondItem="vSJ-bx-k8s" secondAttribute="top" constant="25" id="eOm-Ye-qpr"/>
+                            <constraint firstItem="L6a-AU-kdA" firstAttribute="leading" secondItem="vSJ-bx-k8s" secondAttribute="leading" id="wMd-na-ERo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOY-lI-Rie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4687" y="1169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KsP-AZ-Y2M">
+            <objects>
+                <viewController storyboardIdentifier="ia" id="R9w-E5-7g3" customClass="IAViewController" customModule="AITU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMm-IX-0B4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mwn-Vl-QlL">
+                                <rect key="frame" x="0.0" y="69" width="414" height="781.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Industrial Automation (Индустриальная автоматизация)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD0-X1-DjL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="26"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.4941176471" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ia" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-f0-JxK">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="lag-Ck-npU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6B06104" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lme-mI-AiG">
+                                        <rect key="frame" x="0.0" y="322" width="414" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="idq-yQ-AyR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCh-sv-fho">
+                                        <rect key="frame" x="0.0" y="355.5" width="414" height="396"/>
+                                        <string key="text">Образовательная программа «Industrial Automation» (Индустриальная автоматизация) готовит специалиста, умеющего проектировать и разрабатывать программное обеспечение для индустриальных систем. Программа имеет прикладную направленность и уделяет особое внимание пониманию всего процесса проектирования, начиная с разработки модели и заканчивая внедрением в аппаратное и программное обеспечение. Знания по распределенным системам, теории сигналов и управления, архитектурам компьютерных систем дополняют профиль выпускника. Полученные компетенции позволят выпускникам успешно работать в высокотехнологичных отраслях промышленности.</string>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профильные предметы: физика + математика" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIA-EN-CWV">
+                                        <rect key="frame" x="0.0" y="761.5" width="414" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="qZg-bm-21E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                        <color key="textColor" red="0.41149452580000001" green="0.72673480749999997" blue="0.94023997579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AD0-X1-DjL" firstAttribute="leading" secondItem="Mwn-Vl-QlL" secondAttribute="leading" id="DaT-XO-jjW"/>
+                                    <constraint firstAttribute="width" constant="414" id="Vn1-tq-Uyj"/>
+                                    <constraint firstAttribute="trailing" secondItem="AD0-X1-DjL" secondAttribute="trailing" id="iYh-PA-1KA"/>
+                                    <constraint firstAttribute="trailing" secondItem="DbB-f0-JxK" secondAttribute="trailing" id="unk-M6-dqR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LoU-Xw-l4C"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mwn-Vl-QlL" secondAttribute="trailing" id="8pB-8k-LEH"/>
+                            <constraint firstItem="Mwn-Vl-QlL" firstAttribute="leading" secondItem="LoU-Xw-l4C" secondAttribute="leading" id="Fng-Ds-esd"/>
+                            <constraint firstItem="Mwn-Vl-QlL" firstAttribute="top" secondItem="LoU-Xw-l4C" secondAttribute="top" constant="25" id="P5d-Zj-Xvr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzE-mK-aPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5390" y="1169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aituback" width="700" height="394"/>
+        <image name="cs" width="1100" height="490"/>
+        <image name="dj" width="1100" height="490"/>
+        <image name="fac" width="1100" height="490"/>
+        <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="ia" width="1100" height="490"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="itm" width="1100" height="490"/>
+        <image name="logoBlackVer" width="300" height="154"/>
+        <image name="news1" width="1170" height="1171"/>
+        <image name="news2" width="1190" height="1182"/>
+        <image name="news3" width="1187" height="1194"/>
+        <image name="news4" width="1176" height="1180"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
